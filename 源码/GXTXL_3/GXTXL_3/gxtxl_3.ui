@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GXTXL_3Class</class>
+ <widget class="QMainWindow" name="GXTXL_3Class">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>846</width>
+    <height>564</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>高校通讯录管理系统</string>
+  </property>
+  <property name="windowIcon">
+   <iconset>
+    <normaloff>res/001.png</normaloff>res/001.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>470</y>
+      <width>411</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>查询条件</string>
+    </property>
+    <widget class="QRadioButton" name="radioButton">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>47</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </widget>
+    <widget class="QRadioButton" name="radioButton_2">
+     <property name="geometry">
+      <rect>
+       <x>80</x>
+       <y>20</y>
+       <width>47</width>
+       <height>17</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>班级</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="lineEdit">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>20</y>
+       <width>161</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton">
+     <property name="geometry">
+      <rect>
+       <x>318</x>
+       <y>10</y>
+       <width>61</width>
+       <height>31</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>res/006.png</normaloff>res/006.png</iconset>
+     </property>
+    </widget>
+    <widget class="QToolButton" name="toolButton_2">
+     <property name="geometry">
+      <rect>
+       <x>318</x>
+       <y>11</y>
+       <width>61</width>
+       <height>30</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>查询</string>
+     </property>
+     <property name="icon">
+      <iconset>
+       <normaloff>res/006.png</normaloff>res/006.png</iconset>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>381</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>排序方式</string>
+    </property>
+    <widget class="QWidget" name="layoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>30</x>
+       <y>20</y>
+       <width>341</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <item row="0" column="0">
+       <widget class="QRadioButton" name="radioButton_3">
+        <property name="text">
+         <string>学号</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="1">
+       <widget class="QRadioButton" name="radioButton_4">
+        <property name="text">
+         <string>班级</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2">
+       <widget class="QRadioButton" name="radioButton_5">
+        <property name="text">
+         <string>姓名</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>841</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <column>
+     <property name="text">
+      <string>学号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>班级号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>性别</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>年龄</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>841</width>
+      <height>461</height>
+     </rect>
+    </property>
+    <property name="alternatingRowColors">
+     <bool>true</bool>
+    </property>
+    <attribute name="headerStretchLastSection">
+     <bool>true</bool>
+    </attribute>
+    <column>
+     <property name="text">
+      <string>id</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>班级号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>姓名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>性别</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>身份证号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>户籍</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>电话</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>邮箱</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>邮编</string>
+     </property>
+    </column>
+   </widget>
+   <widget class="QTreeWidget" name="treeWidget_3">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>851</width>
+      <height>531</height>
+     </rect>
+    </property>
+    <column>
+     <property name="text">
+      <string>班级号</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>班名</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>学生人数</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>班长</string>
+     </property>
+    </column>
+    <column>
+     <property name="text">
+      <string>班主任</string>
+     </property>
+    </column>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>846</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>增加(&amp;I)</string>
+    </property>
+    <addaction name="addStu"/>
+    <addaction name="addClass"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>修改(&amp;B)</string>
+    </property>
+    <addaction name="changeStu"/>
+    <addaction name="changeM"/>
+    <addaction name="changeClass"/>
+   </widget>
+   <widget class="QMenu" name="menu_4">
+    <property name="title">
+     <string>查看(&amp;C)</string>
+    </property>
+    <addaction name="lookStudent"/>
+    <addaction name="lookMassage"/>
+    <addaction name="lookClass"/>
+   </widget>
+   <widget class="QMenu" name="menu_S">
+    <property name="title">
+     <string>关于(&amp;A)</string>
+    </property>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_4"/>
+   <addaction name="menu_S"/>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="addStu">
+   <property name="text">
+    <string>添加学生</string>
+   </property>
+  </action>
+  <action name="addClass">
+   <property name="text">
+    <string>添加班级</string>
+   </property>
+  </action>
+  <action name="changeStu">
+   <property name="text">
+    <string>修改学生</string>
+   </property>
+  </action>
+  <action name="changeClass">
+   <property name="text">
+    <string>修改班级</string>
+   </property>
+  </action>
+  <action name="lookClass">
+   <property name="text">
+    <string>查看班级</string>
+   </property>
+  </action>
+  <action name="lookMassage">
+   <property name="text">
+    <string>查看信息</string>
+   </property>
+  </action>
+  <action name="lookStudent">
+   <property name="text">
+    <string>查看学生</string>
+   </property>
+  </action>
+  <action name="changeM">
+   <property name="text">
+    <string>修改信息</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="gxtxl_3.qrc"/>
+ </resources>
+ <connections/>
+</ui>
